@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raditya Putra Pratama — Portofolio Siswa Kelas XI DKV | Graphic & Digital Artist</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Portofolio resmi Raditya Putra Pratama, siswa Kelas XI DKV (Desain Komunikasi Visual). Menampilkan karya branding, poster, 3D art, kemasan, fotografi, dan UI/UX modern. Siap untuk PKL/Magang Industri.">
+  <meta name="keywords"
+    content="Portofolio DKV, Siswa SMK DKV, Desain Komunikasi Visual, Desain Grafis, Portofolio Kelas XI, Branding, 3D Art, UI UX, Magang DKV">
+  <meta name="author" content="Raditya Putra Pratama">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+
+  <!-- Font Awesome 6.5.1 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Custom Magnetic Cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="custom-cursor-follower" id="cursorFollower"></div>
+
+  <!-- Ambient Dynamic Mesh Background -->
+  <div class="bg-mesh-canvas">
+    <div class="mesh-blob mesh-blob-1"></div>
+    <div class="mesh-blob mesh-blob-2"></div>
+    <div class="mesh-blob mesh-blob-3"></div>
+  </div>
+  <div class="bg-grid-overlay"></div>
+
+  <!-- ===================================================================
+       NAVBAR HEADER
+       =================================================================== -->
+  <header class="navbar">
+    <div class="nav-container">
+      <nav class="nav-inner">
+        <a href="#home" class="nav-brand">
+          <div class="brand-badge">R</div>
+          <div class="brand-info">
+            <span class="brand-name">Raditya Putra P.</span>
+            <span class="brand-role"><span class="pulse-dot"></span> XI DKV • SMK Tunas Media</span>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Beranda</a></li>
+          <li><a href="#showcase" class="nav-link">Galeri Karya</a></li>
+          <li><a href="#designLab" class="nav-link">Design Lab</a></li>
+          <li><a href="#skills" class="nav-link">Keahlian & Tools</a></li>
+          <li><a href="#journey" class="nav-link">Perjalanan DKV</a></li>
+          <li><a href="#contact" class="nav-link">Kontak & Order</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <!-- Lo-Fi Ambient Audio Toggle -->
+          <button class="btn-audio-toggle" id="audioToggleBtn" title="Aktifkan Musik Lo-Fi Santai">
+            <div class="audio-bars">
+              <span class="audio-bar"></span>
+              <span class="audio-bar"></span>
+              <span class="audio-bar"></span>
+            </div>
+            <span>Lo-Fi Beats: OFF</span>
+          </button>
+
+          <!-- Theme Switcher Button -->
+          <button class="theme-selector-btn" id="themeToggleBtn" title="Ganti Tema Warna">
+            <i class="fa-solid fa-palette"></i>
+          </button>
+
+          <a href="#contact" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.85rem;">
+            <i class="fa-brands fa-whatsapp"></i> Hubungi
+          </a>
+
+          <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Buka Menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       HERO SECTION
+       =================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Hero Content -->
+        <div class="hero-content">
+          <div class="hero-badge-container">
+            <span class="badge-student">
+              <i class="fa-solid fa-graduation-cap"></i> Siswa Kelas XI DKV 1
+            </span>
+            <span class="badge-available">
+              <i class="fa-solid fa-circle-check"></i> Siap Magang / PKL & Project Freelance
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            Menghidupkan Cerita Visual Lewat Seni <br>
+            <span class="gradient-text">Desain Grafis & Digital</span>
+          </h1>
+
+          <div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 20px;">
+            Saya seorang <span class="typed-role-wrapper"><span id="typedRole"></span><span
+                class="cursor-blink"></span></span>
+          </div>
+
+          <p class="hero-desc">
+            Selamat datang di portofolio kreatif saya! Saya adalah siswa jurusan <strong>Desain Komunikasi Visual
+              (DKV)</strong> dengan passion mendalam pada perancangan identitas merek, poster eksperimental, 3D visual,
+            kemasan produk, dan antarmuka UI/UX yang memikat emosi penonton.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#showcase" class="btn btn-primary">
+              <i class="fa-solid fa-compass"></i> Jelajahi Karya
+            </a>
+            <a href="#designLab" class="btn btn-glow-magenta">
+              <i class="fa-solid fa-flask-vial"></i> Buka Design Lab Interaktif
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-solid fa-briefcase"></i> Rekrut PKL / Hubungi
+            </a>
+          </div>
+
+          <!-- Quick Stats Ribbon -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">24<span>+</span></div>
+              <div class="stat-label">Karya & Proyek Selesai</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">15<span>+</span></div>
+              <div class="stat-label">Sertifikat & Kompetisi</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100<span>%</span></div>
+              <div class="stat-label">Dedikasi Seni Visual</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Avatar Card -->
+        <div class="hero-visual">
+          <div class="avatar-card-wrapper">
+            <div class="avatar-glow-ring"></div>
+
+            <!-- Floating Badge Top Left -->
+            <div class="floating-badge badge-top-left">
+              <div class="badge-icon icon-adobe">
+                <i class="fa-solid fa-bezier-curve"></i>
+              </div>
+              <div>
+                <div class="badge-text-title">Adobe Certified</div>
+                <div class="badge-text-sub">Illustrator & Photoshop</div>
+              </div>
+            </div>
+
+            <!-- Floating Badge Bottom Right -->
+            <div class="floating-badge badge-bottom-right">
+              <div class="badge-icon icon-blender">
+                <i class="fa-solid fa-cube"></i>
+              </div>
+              <div>
+                <div class="badge-text-title">3D & Octane</div>
+                <div class="badge-text-sub">Blender Cycles Render</div>
+              </div>
+            </div>
+
+            <!-- Main Card -->
+            <div class="avatar-card">
+              <div class="avatar-img-box">
+                <img src="assets/images/avatar.jpg" alt="Raditya Putra Pratama - Siswa XI DKV">
+                <div class="avatar-overlay-tag">
+                  <i class="fa-solid fa-award"></i> Juara 1 FLS2N Desain
+                </div>
+              </div>
+              <div class="avatar-bottom-info">
+                <div class="student-tag-group">
+                  <h4>Raditya Putra Pratama</h4>
+                  <p>NISN: 0089234120 • Angkatan 2026/2027</p>
+                </div>
+                <span class="badge-student"
+                  style="background: rgba(0, 242, 254, 0.15); color: var(--accent-cyan); border-color: rgba(0, 242, 254, 0.3);">
+                  XI DKV
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SHOWCASE & PORTFOLIO GALLERY
+       =================================================================== -->
+  <section class="section" id="showcase">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <i class="fa-solid fa-shapes"></i> Galeri Karya Pilihan
+        </span>
+        <h2 class="section-title">Hasil Karya Siswa <span class="gradient-text">Kelas XI DKV</span></h2>
+        <p class="section-subtitle">
+          Kumpulan karya tugas sekolah, proyek mandiri, hasil kompetisi, dan kolaborasi nyata yang dikerjakan dengan
+          standar industri kreatif.
+        </p>
+      </div>
+
+      <!-- Controls: Filters & Search -->
+      <div class="showcase-controls">
+        <div class="filter-pills-row">
+          <button class="filter-btn active" data-filter="all">
+            <i class="fa-solid fa-grid-2"></i> Semua Karya (6)
+          </button>
+          <button class="filter-btn" data-filter="branding">
+            <i class="fa-solid fa-pen-nib"></i> Branding & Logo
+          </button>
+          <button class="filter-btn" data-filter="poster">
+            <i class="fa-solid fa-file-image"></i> Poster & Tipografi
+          </button>
+          <button class="filter-btn" data-filter="3d">
+            <i class="fa-solid fa-cube"></i> 3D & Digital Art
+          </button>
+          <button class="filter-btn" data-filter="uiux">
+            <i class="fa-solid fa-mobile-screen-button"></i> UI/UX App
+          </button>
+          <button class="filter-btn" data-filter="packaging">
+            <i class="fa-solid fa-box-open"></i> Kemasan Produk
+          </button>
+          <button class="filter-btn" data-filter="photo">
+            <i class="fa-solid fa-camera"></i> Fotografi & Retouch
+          </button>
+        </div>
+
+        <div class="search-and-sort-bar">
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="searchArtworkInput" class="search-input"
+              placeholder="Cari karya (misal: kopi, 3D, poster, figma, tempe)...">
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Dynamic Grid -->
+      <div class="portfolio-grid" id="portfolioGrid">
+        <!-- Rendered by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       INTERACTIVE DESIGN LAB (PLAYGROUND)
+       =================================================================== -->
+  <section class="section design-lab-section" id="designLab">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"
+          style="color: var(--accent-magenta); background: rgba(247, 37, 133, 0.1); border-color: rgba(247, 37, 133, 0.3);">
+          <i class="fa-solid fa-flask-vial"></i> Interactive Playground
+        </span>
+        <h2 class="section-title">Studio <span class="gradient-text-magenta">Design Lab</span> Interaktif</h2>
+        <p class="section-subtitle">
+          Uji langsung karya desain ke dalam berbagai format mockup, bandingkan grading foto sebelum & sesudah, dan
+          eksplorasi palet warna kreatif.
+        </p>
+      </div>
+
+      <!-- Lab Navigation Tabs -->
+      <div class="lab-tabs-nav">
+        <button class="lab-tab-btn active" data-tab="tabMockup">
+          <i class="fa-solid fa-shirt"></i> Live Mockup Studio
+        </button>
+        <button class="lab-tab-btn" data-tab="tabBeforeAfter">
+          <i class="fa-solid fa-sliders"></i> Before & After Grading
+        </button>
+        <button class="lab-tab-btn" data-tab="tabPalettes">
+          <i class="fa-solid fa-swatchbook"></i> Color Harmony & Palettes
+        </button>
+        <button class="lab-tab-btn" data-tab="tabTypography">
+          <i class="fa-solid fa-font"></i> Kinetic Typography Tester
+        </button>
+      </div>
+
+      <!-- Lab Tab 1: Live Mockup Studio -->
+      <div class="lab-tab-content active" id="tabMockup">
+        <div class="mockup-studio-layout">
+          <div class="mockup-controls">
+            <h3>Penerapan Desain pada Media Fisik</h3>
+            <p>Pilih jenis media cetak mockup dan tentukan karya siswa yang ingin diaplikasikan secara realtime:</p>
+
+            <div class="mockup-selector-group">
+              <label>Pilih Jenis Media Mockup:</label>
+              <div class="mockup-options-grid">
+                <button class="mockup-choice-btn active" data-mockup="tshirt">
+                  <i class="fa-solid fa-shirt"></i> Kaos / T-Shirt
+                </button>
+                <button class="mockup-choice-btn" data-mockup="mug">
+                  <i class="fa-solid fa-mug-hot"></i> Coffee Mug
+                </button>
+                <button class="mockup-choice-btn" data-mockup="poster">
+                  <i class="fa-solid fa-frame"></i> Bingkai Poster
+                </button>
+              </div>
+            </div>
+
+            <div class="mockup-selector-group">
+              <label>Pilih Artwork Siswa:</label>
+              <div class="artwork-picker-grid">
+                <button class="artwork-thumb-btn active" data-art="assets/images/poster-fest.jpg">
+                  <img src="assets/images/poster-fest.jpg" alt="Poster Fest">
+                </button>
+                <button class="artwork-thumb-btn" data-art="assets/images/branding-kopi.jpg">
+                  <img src="assets/images/branding-kopi.jpg" alt="Branding Kopi">
+                </button>
+                <button class="artwork-thumb-btn" data-art="assets/images/3d-room.jpg">
+                  <img src="assets/images/3d-room.jpg" alt="3D Room">
+                </button>
+                <button class="artwork-thumb-btn" data-art="assets/images/packaging-tempe.jpg">
+                  <img src="assets/images/packaging-tempe.jpg" alt="Packaging Tempe">
+                </button>
+              </div>
+            </div>
+
+            <div
+              style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-glass); padding: 16px; border-radius: 12px; font-size: 0.85rem; color: var(--text-muted);">
+              <i class="fa-solid fa-circle-info" style="color: var(--accent-cyan);"></i>
+              Simulasi ini menunjukkan bagaimana karya siswa DKV siap diproduksi untuk merchandise, kemasan, maupun
+              pameran galeri.
+            </div>
+          </div>
+
+          <!-- Mockup Visual Display Stage -->
+          <div class="mockup-stage mockup-preset-tshirt" id="mockupStage">
+            <div class="mockup-canvas-container">
+              <!-- Mockup Vector Base Object -->
+              <svg class="mockup-base-object" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- T-shirt Shape -->
+                <path
+                  d="M120 70 C140 100 260 100 280 70 L360 120 L320 180 L280 160 L280 360 L120 360 L120 160 L80 180 L40 120 Z"
+                  fill="#1e293b" stroke="#334155" stroke-width="4" />
+                <path d="M140 70 Q200 110 260 70" stroke="#475569" stroke-width="4" fill="none" />
+              </svg>
+
+              <!-- Dynamic Artwork Placement -->
+              <img src="assets/images/poster-fest.jpg" id="mockupArtworkOverlay" class="mockup-artwork-overlay"
+                alt="Artwork Overlay">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lab Tab 2: Before / After Photo Retouching Slider -->
+      <div class="lab-tab-content" id="tabBeforeAfter">
+        <div class="grading-slider-card">
+          <div style="margin-bottom: 20px; text-align: center;">
+            <h3>Perbandingan Color Grading & Retouch Fotografi</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Geser slider putih ke kiri & kanan untuk melihat
+              transformasi foto mentah (RAW) menjadi tone sinematik Teal & Orange Kota Tua.</p>
+          </div>
+
+          <div class="split-slider-container" id="splitSliderContainer">
+            <!-- After Image (Color Graded) -->
+            <img src="assets/images/photo-kotatua.jpg" class="split-img-after" alt="Color Graded Photo">
+            <span class="slider-label label-after">HASIL RETOUCH / FINAL TONE</span>
+
+            <!-- Before Image (Desaturated / Flat RAW) -->
+            <div class="split-img-before-wrapper" id="splitBeforeWrapper">
+              <img src="assets/images/photo-kotatua.jpg" class="split-img-before" alt="Original RAW Photo">
+              <span class="slider-label label-before">ORIGINAL / RAW CAMERA</span>
+            </div>
+
+            <!-- Draggable Handle -->
+            <div class="slider-handle" id="sliderHandle">
+              <div class="slider-handle-button">
+                <i class="fa-solid fa-arrows-left-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lab Tab 3: Palette Generator -->
+      <div class="lab-tab-content" id="tabPalettes">
+        <div style="text-align: center; margin-bottom: 30px;">
+          <h3>Koleksi Palet Warna Kurasi DKV</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Arahkan kursor pada warna untuk melihat kode HEX atau
+            klik untuk menyalin langsung.</p>
+        </div>
+        <div class="palette-studio-grid" id="paletteStudioGrid">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+      <!-- Lab Tab 4: Typography Tester -->
+      <div class="lab-tab-content" id="tabTypography">
+        <div class="mockup-studio-layout" style="grid-template-columns: 1fr 1fr;">
+          <div class="mockup-controls">
+            <h3>Eksplorasi Tipografi Swiss & Editorial</h3>
+            <p>Ubah teks, ukuran font, dan jarak huruf untuk melihat karakter visual tipografi DKV:</p>
+
+            <div class="form-group">
+              <label>Ketik Teks Poster / Headline:</label>
+              <input type="text" id="typoCustomText" class="form-input" value="KREATIVITAS TANPA BATAS • XI DKV">
+            </div>
+
+            <div class="form-group">
+              <label>Ukuran Font (Font Size):</label>
+              <input type="range" id="typoFontSize" min="20" max="64" value="38" style="width: 100%;">
+            </div>
+
+            <div class="form-group">
+              <label>Ketebalan (Font Weight):</label>
+              <select id="typoFontWeight" class="form-select">
+                <option value="400">Regular (400)</option>
+                <option value="700">Bold (700)</option>
+                <option value="900" selected>Heavy Black (900)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Letter Spacing (Kerning):</label>
+              <input type="range" id="typoLetterSpacing" min="-3" max="15" value="1" style="width: 100%;">
+            </div>
+          </div>
+
+          <div
+            style="background: radial-gradient(circle, #1a1a2e 0%, #0f172a 100%); border: 1px solid var(--border-glass); border-radius: var(--radius-lg); padding: 30px; display: flex; align-items: center; justify-content: center; min-height: 280px; position: relative; overflow: hidden;">
+            <div
+              style="position: absolute; top: 12px; left: 16px; font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-cyan);">
+              // LIVE EDITORIAL CANVAS PREVIEW
+            </div>
+            <div id="typoLivePreview"
+              style="font-family: var(--font-display); font-size: 38px; font-weight: 900; line-height: 1.1; color: #fff; text-align: center; text-transform: uppercase; background: var(--gradient-brand); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+              KREATIVITAS TANPA BATAS • XI DKV
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SKILLS & SOFTWARE ARSENAL
+       =================================================================== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <i class="fa-solid fa-code-branch"></i> Penguasaan Teknis
+        </span>
+        <h2 class="section-title">Keahlian & <span class="gradient-text">Software Arsenal</span></h2>
+        <p class="section-subtitle">
+          Kombinasi kemampuan mengoperasikan software standar industri dengan pemahaman mendalam tentang prinsip
+          nirmana, hierarki visual, dan estetika.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Software Proficiency Bars -->
+        <div class="skill-category-card">
+          <h3><i class="fa-solid fa-laptop-code"></i> Software Mastery</h3>
+          <div class="software-bars-list">
+
+            <div class="software-item">
+              <div class="software-info">
+                <span><i class="fa-solid fa-bezier-curve" style="color: #ff9a00;"></i> Adobe Illustrator</span>
+                <span class="software-percentage">92%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" data-width="92%"></div>
+              </div>
+            </div>
+
+            <div class="software-item">
+              <div class="software-info">
+                <span><i class="fa-solid fa-image" style="color: #31a8ff;"></i> Adobe Photoshop</span>
+                <span class="software-percentage">95%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" data-width="95%"></div>
+              </div>
+            </div>
+
+            <div class="software-item">
+              <div class="software-info">
+                <span><i class="fa-brands fa-figma" style="color: #f24e1e;"></i> Figma UI/UX Design</span>
+                <span class="software-percentage">90%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" data-width="90%"></div>
+              </div>
+            </div>
+
+            <div class="software-item">
+              <div class="software-info">
+                <span><i class="fa-solid fa-cube" style="color: #ea7600;"></i> Blender 3D (Cycles & Eevee)</span>
+                <span class="software-percentage">82%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" data-width="82%"></div>
+              </div>
+            </div>
+
+            <div class="software-item">
+              <div class="software-info">
+                <span><i class="fa-solid fa-wand-magic-sparkles" style="color: #38bdf8;"></i> Adobe Lightroom (Color
+                  Grading)</span>
+                <span class="software-percentage">88%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" data-width="88%"></div>
+              </div>
+            </div>
+
+            <div class="software-item">
+              <div class="software-info">
+                <span><i class="fa-solid fa-film" style="color: #9999ff;"></i> After Effects & Premiere Pro</span>
+                <span class="software-percentage">80%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" data-width="80%"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Design Competencies -->
+        <div class="skill-category-card">
+          <h3><i class="fa-solid fa-palette"></i> Kompetensi Desain DKV</h3>
+          <div class="competency-tags-grid">
+
+            <div class="competency-item">
+              <h4>🎨 Teori Warna & Nirmana</h4>
+              <p>Penguasaan kontras, psikologi warna, nirmana bidang datar & ruang 3D.</p>
+            </div>
+
+            <div class="competency-item">
+              <h4>✍️ Tipografi & Layout Grid</h4>
+              <p>Struktur hierarki pembacaan, alignment, Swiss grid layout editorial.</p>
+            </div>
+
+            <div class="competency-item">
+              <h4>📦 Desain Kemasan & Pre-Press</h4>
+              <p>Dieline pola potong kemasan, warna CMYK, resolusi 300DPI siap cetak offset.</p>
+            </div>
+
+            <div class="competency-item">
+              <h4>📱 Desain UI/UX & Prototyping</h4>
+              <p>Wireframing, user persona, atomic design system, interaksi mobile prototype.</p>
+            </div>
+
+            <div class="competency-item">
+              <h4>📷 Fotografi Studio & Produk</h4>
+              <p>Teknik lighting 3-point, depth of field, komposisi rule of thirds, retouching.</p>
+            </div>
+
+            <div class="competency-item">
+              <h4>🎬 Storyboarding & Motion</h4>
+              <p>Penyusunan alur cerita visual, timing keyframe, animasi tipografi kinetik.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       DKV JOURNEY & TIMELINE (SEKOLAH & MAGANG)
+       =================================================================== -->
+  <section class="section" id="journey">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <i class="fa-solid fa-route"></i> Roadmap Pembelajaran
+        </span>
+        <h2 class="section-title">Perjalanan Siswa di <span class="gradient-text">Jurusan DKV</span></h2>
+        <p class="section-subtitle">
+          Rekam jejak kurikulum kejuruan dari dasar seni rupa hingga siap terjun ke dunia industri kreatif dan program
+          magang PKL.
+        </p>
+      </div>
+
+      <div class="timeline-track">
+
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">KELAS X • SEMESTER 1 & 2 (2025)</div>
+            <h3 class="timeline-title">Fondasi Seni Visual & Nirmana</h3>
+            <p class="timeline-desc">
+              Mempelajari dasar sketsa manual, nirmana 2D/3D, pengenalan software vektor Illustrator dan raster
+              Photoshop, serta dasar komposisi visual.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">KELAS XI • SEMESTER 3 (GANJIL 2026)</div>
+            <h3 class="timeline-title">Identitas Visual, Kemasan & UI/UX</h3>
+            <p class="timeline-desc">
+              Membuat perancangan brand corporate identity lengkap, perancangan kemasan UMKM, fotografi komersial, serta
+              prototipe antarmuka mobile apps di Figma.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">KELAS XI • SEMESTER 4 (SEKARANG)</div>
+            <h3 class="timeline-title">3D Art, Motion Graphics & Portfolio Siap Industri</h3>
+            <p class="timeline-desc">
+              Eksplorasi Blender 3D modeling, lighting octane, motion graphics di After Effects, serta pematangan
+              portofolio untuk seleksi Praktik Kerja Lapangan (PKL).
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 4 -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card" style="border-color: rgba(6, 214, 160, 0.4);">
+            <div class="timeline-year" style="color: var(--accent-green);">TAHAP SELANJUTNYA • 2026/2027</div>
+            <h3 class="timeline-title">Praktik Kerja Lapangan (PKL) / Magang Industri</h3>
+            <p class="timeline-desc">
+              Siap ditempatkan di Creative Agency, Studio Animasi & Game, Software House, Percetakan Modern, atau Divisi
+              Desain Perusahaan.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       PRESTASI & SERTIFIKASI
+       =================================================================== -->
+  <section class="section" style="background: rgba(17, 21, 28, 0.5);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"
+          style="color: var(--accent-yellow); background: rgba(255, 209, 102, 0.1); border-color: rgba(255, 209, 102, 0.3);">
+          <i class="fa-solid fa-trophy"></i> Rekam Jejak Prestasi
+        </span>
+        <h2 class="section-title">Sertifikasi & <span style="color: var(--accent-yellow);">Penghargaan</span></h2>
+        <p class="section-subtitle">
+          Pencapaian dalam kompetisi desain tingkat kota hingga nasional serta sertifikasi keahlian terverifikasi.
+        </p>
+      </div>
+
+      <div class="awards-grid">
+        <div class="award-card">
+          <div class="award-icon-box">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <div class="award-info">
+            <h4>Juara 1 Lomba Poster FLS2N</h4>
+            <div class="award-issuer">Dinas Pendidikan Kota • 2026</div>
+            <p class="award-desc">Kategori Desain Grafis & Poster Festival Kebudayaan Musik Modern Nusantara.</p>
+          </div>
+        </div>
+
+        <div class="award-card">
+          <div class="award-icon-box"
+            style="color: var(--accent-cyan); background: rgba(0, 242, 254, 0.15); border-color: rgba(0, 242, 254, 0.3);">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <div class="award-info">
+            <h4>Adobe Certified Professional</h4>
+            <div class="award-issuer">Certiport / Adobe Inc. • 2026</div>
+            <p class="award-desc">Visual Design using Adobe Photoshop & Illustrator Certified Associate.</p>
+          </div>
+        </div>
+
+        <div class="award-card">
+          <div class="award-icon-box"
+            style="color: var(--accent-magenta); background: rgba(247, 37, 133, 0.15); border-color: rgba(247, 37, 133, 0.3);">
+            <i class="fa-solid fa-medal"></i>
+          </div>
+          <div class="award-info">
+            <h4>Juara 2 Redesain Kemasan UMKM</h4>
+            <div class="award-issuer">Kemenparekraf Kreatif Fest • 2026</div>
+            <p class="award-desc">Inovasi kemasan artisan ramah lingkungan Keripik Tempe Renyah Crunch.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       TESTIMONIALS
+       =================================================================== -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <i class="fa-solid fa-comments"></i> Apa Kata Mereka
+        </span>
+        <h2 class="section-title">Apresiasi Guru & <span class="gradient-text">Klien Proyek</span></h2>
+        <p class="section-subtitle">
+          Testimoni dari guru produktif DKV sekolah dan mitra proyek UMKM yang telah berkolaborasi.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card">
+          <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            "Raditya memiliki kepekaan visual yang sangat luar biasa untuk siswa kelas XI. Komposisi poster FLS2N dan
+            pemahaman warna brandingnya sudah setara dengan desainer junior profesional."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar-circle">BS</div>
+            <div class="author-meta">
+              <h5>Bambang Setiawan, S.Sn., M.Ds.</h5>
+              <p>Guru Produktif Desain Grafis DKV</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            "Proyek perancangan kemasan Keripik Tempe dari Radit langsung meningkatkan penjualan produk kami hingga 40%!
+            Tampilannya modern, eye-catching, dan sangat disukai generasi muda."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar-circle" style="background: var(--gradient-brand); color: #000;">SN</div>
+            <div class="author-meta">
+              <h5>Siti Nurhaliza</h5>
+              <p>Owner Tempe Renyah Nusantara</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            "Etos kerjanya sangat disiplin terhadap deadline dan terbuka terhadap revisi. Sangat kami rekomendasikan
+            untuk program Magang / PKL di Creative Agency manapun."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar-circle" style="background: var(--gradient-sunset);">HW</div>
+            <div class="author-meta">
+              <h5>Hendra Wijaya, M.Kom</h5>
+              <p>Ketua Kompetensi Keahlian DKV</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       CONTACT & COMMISSION SECTION
+       =================================================================== -->
+  <section class="section" id="contact"
+    style="background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"
+          style="color: var(--accent-green); background: rgba(6, 214, 160, 0.1); border-color: rgba(6, 214, 160, 0.3);">
+          <i class="fa-solid fa-paper-plane"></i> Hubungi & Kolaborasi
+        </span>
+        <h2 class="section-title">Siap <span class="gradient-text">Berkolaborasi</span> Bersama?</h2>
+        <p class="section-subtitle">
+          Terbuka untuk tawaran <strong>Praktik Kerja Lapangan (PKL)</strong>, project desain freelance, pembuatan
+          poster acara, maupun redesain logo & kemasan.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Left: Information Panel -->
+        <div class="contact-info-panel">
+          <!-- PKL Recruitment Callout -->
+          <div class="pkl-recruitment-banner">
+            <h4><i class="fa-solid fa-briefcase"></i> Mencari Siswa Magang / PKL DKV?</h4>
+            <p>
+              Saya siap bergabung untuk periode magang industri semester mendatang. Membawa portofolio aktif, kemampuan
+              eksekusi software cepat, dan motivasi belajar yang tinggi!
+            </p>
+          </div>
+
+          <div class="contact-links-list">
+            <a href="mailto:raditya.dkv.creative@gmail.com" class="contact-link-item">
+              <div class="contact-icon-circle"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">EMAIL KREATIF
+                </div>
+                <div style="font-weight: 700;">raditya.dkv.creative@gmail.com</div>
+              </div>
+            </a>
+
+            <a href="https://wa.me/6281234567890" target="_blank" class="contact-link-item">
+              <div class="contact-icon-circle"><i class="fa-brands fa-whatsapp"></i></div>
+              <div>
+                <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">WHATSAPP CHAT
+                  CEPAT</div>
+                <div style="font-weight: 700;">+62 812-3456-7890</div>
+              </div>
+            </a>
+
+            <a href="https://behance.net" target="_blank" class="contact-link-item">
+              <div class="contact-icon-circle"><i class="fa-brands fa-behance"></i></div>
+              <div>
+                <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">BEHANCE
+                  SHOWCASE</div>
+                <div style="font-weight: 700;">behance.net/radit-creativelab</div>
+              </div>
+            </a>
+
+            <a href="https://instagram.com" target="_blank" class="contact-link-item">
+              <div class="contact-icon-circle"><i class="fa-brands fa-instagram"></i></div>
+              <div>
+                <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">INSTAGRAM KARYA
+                </div>
+                <div style="font-weight: 700;">@radit.creativelab</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Form -->
+        <div class="contact-form-card">
+          <h3 style="font-size: 1.4rem; margin-bottom: 20px;">Formulir Tanya Desain / PKL</h3>
+          <form id="commissionForm">
+            <div class="form-group">
+              <label for="clientName">Nama Lengkap / Perusahaan / Sekolah:</label>
+              <input type="text" id="clientName" class="form-input"
+                placeholder="Misal: Kak Sarah / Studio Multimedia Kreatif" required>
+            </div>
+
+            <div class="form-group">
+              <label>Kategori Kebutuhan Proyek:</label>
+              <input type="hidden" id="selectedProjectType" value="Branding & Logo">
+              <div class="project-type-pills">
+                <button type="button" class="type-pill-btn selected" data-type="Branding & Logo">🎨 Branding &
+                  Logo</button>
+                <button type="button" class="type-pill-btn" data-type="Poster & Publikasi">🖌️ Poster Acara</button>
+                <button type="button" class="type-pill-btn" data-type="Kemasan Produk">📦 Desain Kemasan</button>
+                <button type="button" class="type-pill-btn" data-type="UI/UX Mobile App">📱 UI/UX App</button>
+                <button type="button" class="type-pill-btn" data-type="Tawaran PKL/Magang">💼 Magang / PKL</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="clientBudget">Estimasi Budget / Keterangan:</label>
+              <select id="clientBudget" class="form-select">
+                <option value="Proyek Magang / Sekolah (Non-Komersial)">Proyek Magang / Sekolah (Non-Komersial)</option>
+                <option value="Rp 250.000 - Rp 500.000 (UMKM Friendly)">Rp 250.000 - Rp 500.000 (UMKM Friendly)</option>
+                <option value="Rp 500.000 - Rp 1.500.000">Rp 500.000 - Rp 1.500.000</option>
+                <option value="> Rp 1.500.000 (Full Branding Kit)">> Rp 1.500.000 (Full Branding Kit)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="clientNotes">Ceritakan Kebutuhan Desain Anda:</label>
+              <textarea id="clientNotes" class="form-textarea" rows="4"
+                placeholder="Jelaskan brief singkat, tema warna yang diinginkan, atau informasi magang..."
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fa-brands fa-whatsapp"></i> Kirim Pesan Langsung ke WhatsApp
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       FOOTER
+       =================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+            <div class="brand-badge" style="width: 32px; height: 32px; font-size: 1rem;">R</div>
+            <h3 style="margin: 0;">Raditya Putra Pratama</h3>
+          </div>
+          <p>Portofolio Siswa Kelas XI Desain Komunikasi Visual (DKV) • SMK Kreatif Indonesia</p>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://instagram.com" class="social-icon-btn" title="Instagram"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://behance.net" class="social-icon-btn" title="Behance"><i class="fa-brands fa-behance"></i></a>
+          <a href="https://dribbble.com" class="social-icon-btn" title="Dribbble"><i
+              class="fa-brands fa-dribbble"></i></a>
+          <a href="https://linkedin.com" class="social-icon-btn" title="LinkedIn"><i
+              class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Raditya Putra Pratama • All Visual Rights Reserved.</div>
+        <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-cyan);">
+          Dibuat dengan ❤️ & Semangat Kreativitas DKV
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       PROJECT DETAIL MODAL
+       =================================================================== -->
+  <div class="modal-overlay" id="projectModal" onclick="if(event.target === this) closeProjectModal()">
+    <div class="modal-content-box">
+      <button class="modal-close-btn" onclick="closeProjectModal()" aria-label="Tutup Detail">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-image-stage">
+        <img src="" id="modalImage" alt="Karya DKV">
+      </div>
+
+      <div class="modal-details-body">
+        <div class="modal-header-info">
+          <div class="modal-title-wrap">
+            <span class="modal-category-tag" id="modalCategory">KATEGORI</span>
+            <h2 id="modalTitle">Judul Karya</h2>
+
+            <div style="margin-top: 14px;">
+              <span
+                style="font-size: 0.78rem; font-family: var(--font-mono); color: var(--text-muted); display: block; margin-bottom: 6px;">
+                PALET WARNA UTAMA (Klik swatch untuk salin HEX):
+              </span>
+              <div class="modal-swatches-row" id="modalSwatches"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-specs-grid">
+          <div class="modal-spec-item">
+            <h5>Klien / Tugas</h5>
+            <p id="modalClient">-</p>
+          </div>
+          <div class="modal-spec-item">
+            <h5>Tanggal Pengerjaan</h5>
+            <p id="modalDate">-</p>
+          </div>
+          <div class="modal-spec-item">
+            <h5>Software yang Digunakan</h5>
+            <p id="modalSoftware">-</p>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 24px;">
+          <h4 style="font-size: 1.1rem; margin-bottom: 8px;">Deskripsi & Konsep Kreatif:</h4>
+          <p id="modalDesc" style="color: var(--text-muted); line-height: 1.8; font-size: 0.95rem;"></p>
+        </div>
+
+        <div>
+          <h4
+            style="font-size: 0.85rem; font-family: var(--font-mono); color: var(--text-muted); text-transform: uppercase; margin-bottom: 8px;">
+            Tags & Disiplin Ilmu:
+          </h4>
+          <div class="card-tags" id="modalTags"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- JavaScript Script -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
